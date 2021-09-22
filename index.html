@@ -8,8 +8,9 @@
 </head>
 <body>
     <div id="app">
-    <h1>Great Heavens</h1>
+    <h1>Git Intro</h1>
         <p>I will attempt a branch.</p>
+        <p>This is the new branch. Its called feature branch. These changes won't affect my main branch.</p>
         <button  @click="toggle=!toggle"> Click this </button>
         <div v-if="toggle" class="boxed"></div>
         <div v-if="!toggle" class="circle"></div>
@@ -40,11 +41,28 @@
           background-color: black;
           border-radius: 50%;
           display: inline-block;
-          margin: 2em;
+          margin:  2em;
     }
     button{
-        margin: 2em;
+        margin: auto;
         background-color: burlywood;
+        text-align:center;
+    }
+    p{
+        border: 5px solid;
+        text-align: center;
+        background-color: bisque;
+        color: brown;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: brown;
+        background-color:blanchedalmond;
+        min-height: 2em;
+        min-width: 2em;
+        padding: 1em;
     }
 </style>
 </html>
