@@ -12,7 +12,7 @@
         <p>I will attempt a branch.</p>
         <button  @click="toggle=!toggle"> Click this </button>
         <div v-if="toggle" class="boxed"></div>
-        <div v-if="!toggle" class="circle">>/div>
+        <div v-if="!toggle" class="circle"></div>
     </div>
 </body>
 
@@ -40,6 +40,11 @@
           background-color: black;
           border-radius: 50%;
           display: inline-block;
-}
+          margin: 2em;
+    }
+    button{
+        margin: 2em;
+        background-color: burlywood;
+    }
 </style>
 </html>
